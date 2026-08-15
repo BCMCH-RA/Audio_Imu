@@ -94,7 +94,7 @@
 
 <div class="grid">
   <div class="panel">
-    <h2>Audio · PDM mic (8 kHz, IMA ADPCM)</h2>
+    <h2>Audio · PDM mic (16 kHz, IMA ADPCM)</h2>
     <canvas id="audioCanvas" height="80"></canvas>
     <div class="meter-row">
       <span style="font-family:var(--mono); font-size:11px; color:var(--text-muted);">level</span>
@@ -104,7 +104,7 @@
   </div>
 
   <div class="panel">
-    <h2>IMU · accel + gyro (20 Hz)</h2>
+    <h2>IMU · accel + gyro (200 Hz)</h2>
     <canvas id="accelCanvas" height="60"></canvas>
     <canvas id="gyroCanvas" height="60" style="margin-top:8px;"></canvas>
     <div class="readouts">
@@ -129,7 +129,7 @@ const SERVICE_UUID   = '19b10000-e8f2-537e-4f6c-d104768a1214';
 const IMU_CHAR_UUID  = '19b10001-e8f2-537e-4f6c-d104768a1214';
 const AUDIO_CHAR_UUID= '19b10002-e8f2-537e-4f6c-d104768a1214';
 
-const AUDIO_SAMPLE_RATE = 8000;
+const AUDIO_SAMPLE_RATE = 16000;
 
 // ---------------- DOM ----------------
 const $ = id => document.getElementById(id);
